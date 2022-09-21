@@ -6,14 +6,16 @@
 
 #define TRUE 1
 #define FALSE 0
+
 #define EEUU 1
 #define CHINA 2
 #define OTRO 3
+
 #define IPHONE 1
 #define MAC 2
 #define IPAD 3
 #define ACCESORIOS 4
-#define CANT 10
+#define CANT 1
 
 int inicioMenu(){
 
