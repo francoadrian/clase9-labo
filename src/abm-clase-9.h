@@ -14,8 +14,13 @@ typedef struct{
 	float precio;
 }eProducto;
 
-int searchFree(eProducto list[], int len);
+void mostrarUnProducto(eProducto lista);
+void listarProductos(eProducto lista[], int size);
+void ordenarProductosPorPrecio(eProducto lista[], int size);
+void ordenarProductosPorDescripcion(eProducto lista[], int size);
+/*int searchFree(eProducto list[], int len);*/
 int altaProducto(eProducto array[], int cantidad);
 int inicializarVector(eProducto array[], int cantidad);
+
 
 #endif /* ABM_CLASE_9_H_ */

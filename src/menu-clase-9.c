@@ -26,18 +26,37 @@ int inicioMenu(){
 
 	do{
 		inicializarVector(productos, CANT);
-		printf("\n\t\tMenu principal\n\n1.Alta producto.\n2.Baja producto.\n3.Modificación producto.\n4.Listado productos.\n5.Listado ordenado por precio.\n6.Listado ordenado por descripción.\n");
+		printf("\n\t\tMenu principal\n\n"
+				"1.Alta producto.\n"
+				"2.Baja producto.\n"
+				"3.Modificación producto.\n"
+				"4.Listado productos.\n"
+				"5.Listado ordenado por precio.\n"
+				"6.Listado ordenado por descripción.\n"
+				"7.Salir.\n");
 		printf("Ingrese una opción: ");
 		opcionIngresada = getNumeroInt(1,6);
 		switch(opcionIngresada){
 		case 1:
 			altaProducto(productos, CANT);
-
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			listarProductos(productos, CANT);
+			break;
+		case 5:
+			ordenarProductosPorPrecio(productos, CANT);
+			break;
+		case 6:
+			ordenarProductosPorDescripcion(productos, CANT);
+			break;
+		case 7:
+			salir = TRUE;
 			break;
 		}
-
-
-
 
 	}while(salir == FALSE);
 
